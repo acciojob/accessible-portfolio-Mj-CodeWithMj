@@ -1,16 +1,52 @@
 <!DOCTYPE html>
-
-<html>
-
+<html lang="en">
 <head>
-	<link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accessible Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
-
 <body>
-	<!-- the entire body must be written by student -->
-    <script type="text/javascript" src="./script.js">
-</script>
+    <!-- Main Heading -->
+    <header>
+        <h1 role="heading" aria-level="1">Harsh Pal Singh's Portfolio</h1>
+    </header>
 
-</body>
+    <!-- Navigation Bar -->
+    <nav role="navigation" aria-label="Main Navigation">
+        <ul role="list">
+            <li role="listitem"><a href="#about">About</a></li>
+            <li role="listitem"><a href="#projects">Projects</a></li>
+            <li role="listitem"><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
 
+    <!-- Main Content -->
+    <main>
+        <!-- Profile Section -->
+        <section id="about">
+            <img src="https://colorlib.com/wp/wp-content/uploads/sites/2/Static-Page-Layout-Example.png" alt="Portrait of Harsh Pal Singh" role="img">
+            <p>
+                Hello! I'm Harsh Pal Singh, an enthusiastic student passionate about leveraging my skills 
+                in cloud computing and web development. I love learning new technologies and building 
+                solutions that make a difference.
+            </p>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects">
+            <h2 role="heading" aria-level="2">Projects</h2>
+            <ul role="list">
+                <li role="listitem">Form App - An interactive app with Firebase integration.</li>
+                <li role="listitem">MegaScrap - A website for buying and selling scrap items.</li>
+                <li role="listitem">Portfolio Website - A personal portfolio showcasing my skills and projects.</li>
+            </ul>
+        </section>
+    </main>
+
+    <!-- Footer Section -->
+    <footer>
+        <p id="contact">Contact: <a href="mailto:harshpalsingh565@gmail.com">harshpalsingh565@gmail.com</a></p>
+    </footer> 
+</body> 
 </html>
